@@ -3,10 +3,15 @@ layout: post
 title:  "Digital Level Project Introduction"
 date:   2020-11-11 09:30:00 -0500
 categories: 
-tags: embedded
+tags: embedded project-intro
+project_step: 0
 ---
 
-[Project on GitHub](https://github.com/christopherdean11/DigitalLevel)
+[Project on GitHub](https://github.com/christopherdean11/DigitalLevel)  
+
+| | [Next Post][next_post] |
+
+ <!--- START OF CONTENT --->
 
 # Project Introduction
 ## What is it?
@@ -19,15 +24,17 @@ Plus, its just cool to design something from scratch and hold it in your hand an
 
 ## Goals
 Create a PCB from scratch that can display multiple LED patterns and reflect acceleration data.  
-In order to do that, we need to:
+In order to do that, I need to:
 1. Select a microcontroller and accelerometer
 1. Design the PCB
 1. Fabricate and populate the PCB
 1. Code it up
 1. Iterate. Done? What is "done"?
 
+I had this project fabricated at [OSHPark](http://oshpark.com) and hand assembled myself.  
 
-[Next Post][next_post]
+| | [Next Post][next_post] |
 
+ <!--- END OF CONTENT --->
 
 [next_post]: {% post_url /projects/digitallevel/2020-11-12-select-a-micro %}
