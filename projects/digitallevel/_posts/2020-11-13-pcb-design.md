@@ -7,8 +7,6 @@ tags: embedded hardware pcb kicad
 project_step: 2
 ---
 
-[Project on GitHub](https://github.com/christopherdean11/DigitalLevel)  
-
 |[Previous Post][prev_post] | [Next Post][next_post] |
 
  <!--- START OF CONTENT --->

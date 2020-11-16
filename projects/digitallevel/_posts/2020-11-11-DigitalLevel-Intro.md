@@ -7,7 +7,6 @@ tags: embedded project-intro
 project_step: 0
 ---
 
-[Project on GitHub](https://github.com/christopherdean11/DigitalLevel)  
 
 | | [Next Post][next_post] |
 

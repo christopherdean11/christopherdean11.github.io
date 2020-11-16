@@ -6,8 +6,6 @@ categories:
 tags: embedded hardware stm32 microcontroller
 ---
 
-[Project on GitHub](https://github.com/christopherdean11/DigitalLevel)  
-
 
 |[Previous Post][prev_post] | [Next Post][next_post] |
 
