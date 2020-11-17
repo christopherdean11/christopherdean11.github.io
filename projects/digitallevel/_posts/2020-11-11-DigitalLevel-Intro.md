@@ -1,14 +1,13 @@
 ---
-layout: post
 title:  "Digital Level Project Introduction"
 date:   2020-11-11 09:30:00 -0500
 categories: 
 tags: embedded project-intro
 project_step: 0
+header:
+  overlay_image: https://www.leveldevelopments.com/wp/wp-content/uploads/wpsc/category_images/Plastic_Cylindrical_Level_Vial.jpg
+  overlay_filter: 0.5
 ---
-
-
-| | [Next Post][next_post] |
 
  <!--- START OF CONTENT --->
 
@@ -32,8 +31,4 @@ In order to do that, I need to:
 
 I had this project fabricated at [OSHPark](http://oshpark.com) and hand assembled myself.  
 
-| | [Next Post][next_post] |
-
  <!--- END OF CONTENT --->
-
-[next_post]: {% post_url /projects/digitallevel/2020-11-12-select-a-micro %}

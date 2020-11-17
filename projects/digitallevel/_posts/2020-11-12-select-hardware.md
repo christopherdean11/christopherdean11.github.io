@@ -1,17 +1,16 @@
 ---
-layout: post
 title:  "Select the Hardware"
 date:   2020-11-12 09:30:00 -0500
 categories: 
 tags: embedded hardware stm32 microcontroller
+header:
+  overlay_image: https://images.wisegeek.com/microcontroller-pcb.jpg
+  overlay_filter: 0.5
 ---
-
-
-|[Previous Post][prev_post] | [Next Post][next_post] |
 
  <!--- START OF CONTENT --->
 
-# Where to start with selecting a microcontroller
+# Selecting a microcontroller
 I have heard a lot about the STM32 line of microcontrollers and have wanted to look through what they have for a while.  Since my project is quite small, I'm sure any MCU they offer will be more than capable, so I am looking at the STM32x0x0 "Value" lines, specifically the [STM32L0][stmL0], [STM32F0][stmF0], [STM32G0][stmG0]
 
 Things to consider:
@@ -22,16 +21,16 @@ Things to consider:
 
 *The "Four P's" are not to be confused with the "Four C's"*
 
-#### Price
+## Price
 I initially thought about picking an `STM32G0` series for low-cost since they are marketed as the "cost-effective" line, but after looking into it more, the `STM32F0` series is not much more when buying low quantity, seems to be more popular, has extensive documentation, and the `STM32F` and `STM32L` series parts are already library components in Kicad.  
 
-#### Package
+## Package
 I plan to use OSHPark for the fabrication, which means I'll have to solder the components to the board myself. This limited the search as I was looking for some kind of leaded package like a TSSOP, not a QFN or SON.  STM32G0 is only available in leadless packages, so it is out of contention.
 
-#### Pin Count
+## Pin Count
 I want to drive 9 LEDs, have a couple buttons, and I2C.  A 20-pin package is sufficient for my needs on this project and will help keep the cost down.
 
-#### Peripherals
+## Peripherals
 With limited experience in this world, my knowledge of peripherals is currently limited to things like I2C/SPI, ADC, DAC, and GPIOs.  For this project I can get away with I2C and use GPIOs for controlling the LEDs. 
 
 
@@ -45,7 +44,7 @@ There are 15 pins available for user configuration of the various peripherals mu
 </div>
 
 
-####  Programming
+##  Programming
 Another big item is how to program the MCU.  It looks like the [STM32F030F4][stm_pick] has SWD support (I believe all ARM MCUs have this), so I should be able to connect with ST-LINK using SWD pins.  The [SWD support document][stm_swd] from ST states that SWD should be available if the pins are shown in gray for "reset state" or explicity marked as SWD pins and shown in green, but still recommends explicitly marking them as SWD pins.
 
 <div align="center">
@@ -57,7 +56,7 @@ This exercise in the STM32CubeIDE confirms that I can continue my design with th
 In the next post I'll talk about how I designed the PCB for this project.  
 
 
-# Accelerometer
+# Selecting an accelerometer
 Since I had to hand-solder this board I needed to buy an acceleromter on a breakout board. I could not find any accelerometer in leaded packages, possibly because the leadless packages are required to get the most out of the sensor.  I ended up selecting the [ADXL343 breakout from Adafruit][accel] for a reasonable price and a nice datasheet from Analog Devices. I also liked that this device has so many additional features including
  - single and double tap detection
  - 2 interrupt outputs to trigger a microcontroller
@@ -65,13 +64,9 @@ Since I had to hand-solder this board I needed to buy an acceleromter on a break
 
 These features offered several interesting opportunities for additional software features for this project.
 
-
-|[Previous Post][prev_post] | [Next Post][next_post] |
  
  <!--- END OF CONTENT --->
 
-[prev_post]: {% post_url /projects/digitallevel/2020-11-11-DigitalLevel-Intro %}
-[next_post]: {% post_url /projects/digitallevel/2020-11-13-pcb-design %}
 [stmF0]: https://www.st.com/en/microcontrollers-microprocessors/stm32f0-series.html
 [stmG0]: https://www.st.com/en/microcontrollers-microprocessors/stm32g0-series.html
 [stmL0]: https://www.st.com/en/microcontrollers-microprocessors/stm32l0-series.html

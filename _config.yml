@@ -23,6 +23,47 @@ twitter_username:
 github_username:  christopherdean11
 repository: christopherdean11/christopherdea11.github.io
 
+# Theme
+# https://mmistakes.github.io/minimal-mistakes/docs/layouts/
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: default
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: false
+      share: false
+      related: false
+      toc: true
+      author_profile: true
+
+author:
+  name: "Christopher Dean"
+  avatar: "/assets/images/profile-photo.jpeg"
+  bio: "Electrical engineer by day, embedded and software developer by night." 
+  location: "NH, USA"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/christopherdean11"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/chris-dean-299b814a"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/christopherdean11"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/chris-dean-299b814a"
+
+
 # Build settings
 markdown: kramdown
 # theme: minima
