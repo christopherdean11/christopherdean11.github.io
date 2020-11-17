@@ -15,7 +15,7 @@ gem "minima", "~> 2.0"
 
 # more themes
 gem "minimal-mistakes-jekyll"
-
+gem "jekyll-include-cache" # needed for the theme to work
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
