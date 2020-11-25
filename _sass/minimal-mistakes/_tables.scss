@@ -5,6 +5,7 @@
 table {
   display: block;
   margin-bottom: 1em;
+  table-layout: fixed;
   width: 100%;
   font-family: $global-font-family;
   font-size: $type-size-6;
@@ -36,4 +37,8 @@ tr,
 td,
 th {
   vertical-align: middle;
+}
+
+.reg-tbl td{
+  width: 12%; // want to evenly fill 8 elements, so 12.5% per element
 }
