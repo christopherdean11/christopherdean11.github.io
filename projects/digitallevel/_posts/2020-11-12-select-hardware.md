@@ -40,7 +40,7 @@ To confirm this choice I created a new project in [STMCubeIDE][cube] to set up t
 There are 15 pins available for user configuration of the various peripherals multiplexed to each pin.  I'll set 9 of those (PA0-PA7, PB1) aside as GPIO_Output for LEDs, two (PF0, PF1) as GPIO_Input for the push-button switches, and two (PA9, PA10) for the I2C clock and data lines. Pins  PA13 and PA14 are still available at this point.
 
 <div align="center">
-<img src="{{site.url}}/assets/images/CubeMX_InitialPinAssignment_NoSWD.png" height="300">
+<img src="{{site.url}}/assets/images/projects/digitallevel/CubeMX_InitialPinAssignment_NoSWD.png" height="300">
 </div>
 
 
@@ -48,7 +48,7 @@ There are 15 pins available for user configuration of the various peripherals mu
 Another big item is how to program the MCU.  It looks like the [STM32F030F4][stm_pick] has SWD support (I believe all ARM MCUs have this), so I should be able to connect with ST-LINK using SWD pins.  The [SWD support document][stm_swd] from ST states that SWD should be available if the pins are shown in gray for "reset state" or explicity marked as SWD pins and shown in green, but still recommends explicitly marking them as SWD pins.
 
 <div align="center">
-<img src="{{site.url}}/assets/images/CubeMX_InitialPinAssignments.png" height="300">
+<img src="{{site.url}}/assets/images/projects/digitallevel/CubeMX_InitialPinAssignments.png" height="300">
 </div>
 
 
