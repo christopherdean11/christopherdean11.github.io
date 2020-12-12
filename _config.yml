@@ -44,7 +44,7 @@ defaults:
 author:
   name: "Christopher Dean"
   avatar: "/assets/images/profile-photo.jpeg"
-  bio: "Electrical engineer by day, embedded and software developer by night." 
+  bio: "Electrical engineer fascinated with automation, embedded systems, and software development." 
   location: "NH, USA"
   links:
     - label: "GitHub"

@@ -4,7 +4,8 @@ date:   2020-11-12 09:30:00 -0500
 categories: 
 tags: embedded hardware stm32 microcontroller
 header:
-  overlay_image: https://images.wisegeek.com/microcontroller-pcb.jpg
+  # overlay_image: https://images.wisegeek.com/microcontroller-pcb.jpg
+  overlay_image: /assets/images/projects/digitallevel/stm32discovery_closeup.jpg
   overlay_filter: 0.5
 ---
 

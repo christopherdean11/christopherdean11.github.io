@@ -11,7 +11,7 @@ header:
 
  <!--- START OF CONTENT --->
 
-# Board Requirements
+# Board Design Requirements
 Before getting started with the design I came up with a list of a few basic requirements for this board:
 - As small as reasonably possible to save cost
 - A series of LEDs in a row at one end of the board
@@ -46,6 +46,7 @@ The design process for this board went as follows:
 I wanted to focus on embedded development so I kept the power devliery simple.  I added an 3.3V LDO to allow 5V in from a dedicated 1x2 header (+5V, GND) and tied the LDO output to the 3V3 rail on the programming header.  This way I  could power it from the programmer or 5V. Decoupling capacitors are based on the recommendations in the [Getting started with hardware development for STM32F030xx][hw_dev_doc] guide.
 
 # Design the schematic
+## STMCube Device Configuration
 The first step to adding the microcontroller was confirming the pin configuration for the microcontroller in the CubeIDE.  You can actually rename the pins from "GPIO_Output" to more helpful names like "LED1", as shown below.
 <div align="center">
 <img src="{{site.url}}/assets/images/projects/digitallevel/CubeMX_NamedPinAssignments.png" width="400">

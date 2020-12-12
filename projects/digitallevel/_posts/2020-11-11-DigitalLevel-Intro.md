@@ -5,8 +5,8 @@ categories:
 tags: embedded project-intro
 project_step: 0
 header:
-  overlay_image: https://www.leveldevelopments.com/wp/wp-content/uploads/wpsc/category_images/Plastic_Cylindrical_Level_Vial.jpg
-  overlay_filter: 0.5
+  overlay_image: /assets/images/projects/digitallevel/level_closeup.jpg
+  overlay_filter: 0.7
 ---
 
  <!--- START OF CONTENT --->
